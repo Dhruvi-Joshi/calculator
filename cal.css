@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    background-color: #ecf0f3;
+   
+    
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8e44ad;
+    background-image: url(https://thumbs.dreamstime.com/t/seamless-pattern-simple-numbers-background-13033090.jpg);
+    
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.cal{
+    box-shadow: 6px 6px 13px #333,6px 6px 13px rgba(0,0,0,.16);
+    border-radius: 28px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4,66px);
+    }
+
+    img{
+        background: transparent ;
+    }
+
+.theme-toggler{
+    position: absolute;
+    top:80px;
+    right: 500px;
+    color:#fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active{
+    color:#333;
+}
+
+.theme-toggler.active::before{
+    background-color: #fff;
+}
+
+.theme-toggler::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+}
+
+input{
+    grid-column: span 4;
+    height: 68px;
+    width:258px;
+    box-shadow: inset 2px 2px 13px #333,inset 6px 6px 13px rgba(0,0,0,.16);
+   /* background-color: #ecf0f3; */
+   background-color:limegreen;
+    border: none;
+    border-radius: 32px;
+    color: rgb(26,25,25);
+    text-align: end;
+    margin: 40px 0px 30px 0px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+button{
+    box-shadow:inset 6px 6px 13px pink,6px 6px 13px rgba(0,0,0,.16);
+    background-color: #7bc8f1;
+    border: none;
+    border-radius:50%;
+    width:50px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    color:#333;
+    font-size: 20px;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.ope{
+    box-shadow:inset 2px 2px 3px yellow,6px 6px 13px rgba(0,0,0,.16);
+    background-color: orangered;
+    color: #fff;
+}
+
+.equal{
+    grid-column: span 2;
+    width:120px;
+    border-radius: 42px;
+    box-shadow:inset 6px 6px 13px gray,6px 6px 13px rgba(0,0,0,.16);
+    background-color: purple;
+    color: pink;
+    margin : 10px;
+}
+
+/*dark mode */
+.cal.dark{
+    box-shadow: 6px 6px 13px #fff,6px 6px 13px rgba(0,0,0,.16);
+    background-color: #333;
+    }
+
+.cal.dark button{
+    box-shadow:inset 2px 2px 3px pink,6px 6px 13px rgba(0,0,0,.16);
+    background-color: #1b2f38;
+    color: white;
+}
+
+.cal.dark .ope{
+   background-color: orangered;
+}
+
+.cal.dark .equal{
+    box-shadow:inset 6px 6px 13px gray,6px 6px 13px rgba(0,0,0,.16);
+    background-color: purple;
+    color: pink;
+}
+
+.cal.dark input{
+    box-shadow: inset 2px 2px 13px #fff,inset 6px 6px 13px rgba(0,0,0,.16);
+  
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cal.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <div class="container">
+        
+        <div class="cal dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <input type="text" id="ans" placeholder="0">
+            <button onclick="clr()">Cn</button>
+            <button onclick="back()"><img src="backwhite.png" height="35%"></button>
+            <button onclick="que(0)">0</button>
+            <button class="ope" onclick="que('+')">+</button>
+
+            <button onclick="que(7)">7</button>
+            <button onclick="que(8)">8</button>
+            <button onclick="que(9)">9</button>
+            <button class="ope" onclick="que('-')">-</button>
+
+            <button onclick="que(4)">4</button>
+            <button onclick="que(5)">5</button>
+            <button onclick="que(6)">6</button>
+            <button class="ope" onclick="que('*')">*</button>
+
+            <button onclick="que(1)">1</button>
+            <button onclick="que(2)">2</button>
+            <button onclick="que(3)">3</button>
+            <button class="ope" onclick="que('/')">/</button>
+
+            <script src="cal.js"></script>
+            <button class="equal" onclick="result()">=</button>
+            <button onclick="que('.')">.</button>
+            <button class="ope" onclick="que('%')">%</button>
+            
+            
+            
+        </div>
+    </div>
+</body>
+</html>
